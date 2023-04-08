@@ -26,7 +26,7 @@ class RedCNN(nn.Module):
         
         super().__init__()
         ##Encoding Layers
-        self.conv1=nn.Conv2d(in_channels=3,out_channels=f,kernel_size=k,padding=2,bias=True)
+        self.conv1=nn.Conv2d(in_channels=1,out_channels=f,kernel_size=k,padding=2,bias=True)
         self.conv2=nn.Conv2d(in_channels=f,out_channels=f,kernel_size=k,padding=2,bias=True)
         self.conv3=nn.Conv2d(in_channels=f,out_channels=f,kernel_size=k,padding=2,bias=True)
         self.conv4=nn.Conv2d(in_channels=f,out_channels=f,kernel_size=k,padding=2, bias= True)
